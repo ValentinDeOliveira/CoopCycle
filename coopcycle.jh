@@ -1,7 +1,7 @@
-entity User {
-    userId  Integer  required
-    pass String required
+entity Utilisateur {
+    idUtilisateur  Integer  required
     name String
+	pass String required
     email String
 }
 
@@ -13,7 +13,6 @@ entity Client {
 entity Commercant {
 	shopRating String
     isOpen Boolean
-    averageDeliveryTime Integer
     openingTime ZonedDateTime
     closingTime ZonedDateTime
     tags String
@@ -21,7 +20,6 @@ entity Commercant {
 
 entity Livreur {
 	vehicleType String
-    nbEarnings Integer
     nbRides Integer
     transporterRating String
 }
@@ -51,7 +49,7 @@ relationship OneToMany{
 }
 
 relationship OneToOne{
-	Client{user} to User
+	Client{utilisateur} to Utilisateur
 }
 
 relationship OneToMany{
@@ -59,7 +57,7 @@ relationship OneToMany{
 }
 
 relationship OneToOne{
-	Livreur{user} to User
+	Livreur{utilisateur} to Utilisateur
 }
 
 relationship OneToMany{
@@ -75,7 +73,7 @@ relationship OneToMany{
 }
 
 relationship OneToOne{
-	Commercant{user} to User
+	Commercant{utilisateur} to Utilisateur
 }
 
 relationship OneToMany{

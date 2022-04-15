@@ -12,7 +12,7 @@
 
 eureka:
   instance:
-    hostname: frozen-spire-04286.herokuapp.com
+    hostname: coop-cycle-1.herokuapp.com
     non-secure-port: 80
     prefer-ip-address: false
 

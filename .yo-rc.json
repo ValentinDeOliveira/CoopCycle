@@ -21,7 +21,7 @@
     "enableTranslation": true,
     "entities": ["Client", "Commercant", "Livreur", "Paiement", "Commande", "Cooperative"],
     "entitySuffix": "",
-    "herokuAppName": "frozen-spire-04286",
+    "herokuAppName": "coop-cycle-1",
     "herokuDeployType": "jar",
     "herokuJavaVersion": "11",
     "jhiPrefix": "jhi",
